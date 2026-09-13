@@ -19,10 +19,11 @@ router.post("/razorpay/create", async (req, res) => {
     if (result.success) {
       res.json(result.data);
     } else {
-      res.status(400).json({ error: result.error });
+      res.status(503).json({ error: result.error, message: "Payment gateway not configured. Register at razorpay.com and set env vars." });
     }
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error("Razorpay create error:", err.message);
+    res.status(503).json({ error: err.message, message: "Payment gateway unavailable" });
   }
 });
 
@@ -39,7 +40,7 @@ router.post("/razorpay/verify", async (req, res) => {
     );
 
     if (!isValid) {
-      return res.status(400).json({ error: "Invalid payment signature" });
+      return res.status(503).json({ error: "Invalid payment signature or Razorpay not configured" });
     }
 
     // Update order payment status
@@ -60,7 +61,8 @@ router.post("/razorpay/verify", async (req, res) => {
 
     res.json({ success: true, message: "Payment verified" });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error("Razorpay verify error:", err.message);
+    res.status(503).json({ error: err.message, message: "Payment gateway unavailable" });
   }
 });
 
@@ -91,8 +93,8 @@ router.post("/razorpay/webhook", async (req, res) => {
 
     res.json({ success: true });
   } catch (err) {
-    console.error("Webhook error:", err);
-    res.status(500).json({ error: err.message });
+    console.error("Razorpay webhook error:", err.message);
+    res.status(200).json({ success: true }); // Always 200 to prevent retry loops
   }
 });
 
@@ -104,10 +106,11 @@ router.post("/stripe/create", async (req, res) => {
     if (result.success) {
       res.json(result.data);
     } else {
-      res.status(400).json({ error: result.error });
+      res.status(503).json({ error: result.error, message: "Payment gateway not configured. Register at stripe.com and set env vars." });
     }
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error("Stripe create error:", err.message);
+    res.status(503).json({ error: err.message, message: "Payment gateway unavailable" });
   }
 });
 
@@ -133,7 +136,8 @@ router.post("/stripe/confirm", async (req, res) => {
 
     res.json({ success: true, message: "Payment confirmed" });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error("Stripe confirm error:", err.message);
+    res.status(503).json({ error: err.message, message: "Payment confirmation failed" });
   }
 });
 
@@ -144,7 +148,8 @@ router.post("/stripe/webhook", async (req, res) => {
     const result = verifyStripeSignature(req.body, sig);
 
     if (!result.success) {
-      return res.status(400).json({ error: result.error });
+      console.warn("Stripe webhook signature verification failed:", result.error);
+      return res.status(200).json({ received: true }); // 200 to prevent retries
     }
 
     const { event } = result;
@@ -170,8 +175,8 @@ router.post("/stripe/webhook", async (req, res) => {
 
     res.json({ received: true });
   } catch (err) {
-    console.error("Webhook error:", err);
-    res.status(500).json({ error: err.message });
+    console.error("Stripe webhook error:", err.message);
+    res.status(200).json({ received: true }); // Always 200 to prevent retry loops
   }
 });
 

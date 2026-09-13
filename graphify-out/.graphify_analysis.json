@@ -1,0 +1,311 @@
+{
+  "communities": {
+    "0": [
+      "ref_bcryptjs",
+      "ref_cors",
+      "ref_express",
+      "ref_jsonwebtoken",
+      "ref_mongoose",
+      "server_index",
+      "server_index_app",
+      "server_index_authroutes",
+      "server_index_cors",
+      "server_index_express",
+      "server_index_mongoose",
+      "server_index_orderroutes",
+      "server_index_paymentroutes",
+      "server_index_wishlistroutes",
+      "server_models_user",
+      "server_models_user_mongoose",
+      "server_models_user_userschema",
+      "server_models_wishlist",
+      "server_models_wishlist_mongoose",
+      "server_models_wishlist_wishlistschema",
+      "server_routes_auth",
+      "server_routes_auth_bcrypt",
+      "server_routes_auth_jwt",
+      "server_routes_auth_router",
+      "server_routes_auth_user",
+      "server_routes_wishlist",
+      "server_routes_wishlist_router",
+      "server_routes_wishlist_wishlist"
+    ],
+    "1": [
+      "ref_nodemailer",
+      "server_models_order",
+      "server_models_order_mongoose",
+      "server_models_order_orderschema",
+      "server_routes_orders",
+      "server_routes_orders_checkadmin",
+      "server_routes_orders_order",
+      "server_routes_orders_router",
+      "server_routes_orders_sendorderconfirmation",
+      "server_routes_orders_user",
+      "server_routes_payments",
+      "server_routes_payments_createrazorpayorder_verifyrazorpaypayment_createstripepaymentintent_verifystripesignature",
+      "server_routes_payments_order",
+      "server_routes_payments_router",
+      "server_routes_payments_sendorderconfirmation_sendpaymentconfirmation",
+      "server_services_emailservice",
+      "server_services_emailservice_nodemailer",
+      "server_services_emailservice_sendorderconfirmation",
+      "server_services_emailservice_sendpaymentconfirmation",
+      "server_services_emailservice_sendshippingnotification",
+      "server_services_emailservice_sendstatusupdateemail",
+      "server_services_emailservice_transporter",
+      "server_services_paymentservice",
+      "server_services_paymentservice_createrazorpayorder",
+      "server_services_paymentservice_createstripepaymentintent",
+      "server_services_paymentservice_razorpay",
+      "server_services_paymentservice_verifyrazorpaypayment",
+      "server_services_paymentservice_verifystripesignature"
+    ],
+    "2": [
+      "eslint_config",
+      "package",
+      "package_dependencies",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_router_dom",
+      "package_dependencies_tailwindcss",
+      "package_dependencies_tailwindcss_vite",
+      "package_name",
+      "package_private",
+      "package_type",
+      "package_version",
+      "ref_eslint",
+      "ref_eslint_js",
+      "ref_eslint_plugin_react_hooks",
+      "ref_eslint_plugin_react_refresh",
+      "ref_globals",
+      "ref_react_dom",
+      "ref_tailwindcss",
+      "ref_tailwindcss_vite",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_vite",
+      "ref_vitejs_plugin_react",
+      "vite_config"
+    ],
+    "3": [
+      "ref_dotenv",
+      "ref_nodemon",
+      "ref_razorpay",
+      "ref_stripe",
+      "server_package",
+      "server_package_author",
+      "server_package_description",
+      "server_package_devdependencies",
+      "server_package_devdependencies_nodemon",
+      "server_package_keywords",
+      "server_package_license",
+      "server_package_main",
+      "server_package_name",
+      "server_package_scripts",
+      "server_package_scripts_dev",
+      "server_package_scripts_start",
+      "server_package_scripts_test",
+      "server_package_type",
+      "server_package_version"
+    ],
+    "4": [
+      "ref_react_router_dom",
+      "src_app",
+      "src_app_app",
+      "src_app_home",
+      "src_components_cartdrawer_cartdrawer",
+      "src_components_checkoutmodal_checkoutmodal",
+      "src_components_contact",
+      "src_components_contact_contact",
+      "src_components_footer",
+      "src_components_footer_footer",
+      "src_components_kithighlights",
+      "src_components_kithighlights_kithighlights",
+      "src_components_scrolltotop",
+      "src_components_scrolltotop_scrolltotop",
+      "src_context_cartcontext_cartprovider",
+      "src_main"
+    ],
+    "5": [
+      "src_components_accountpage",
+      "src_components_accountpage_accountpage",
+      "src_components_adminpanel",
+      "src_components_adminpanel_adminpanel",
+      "src_components_adminpanel_x",
+      "src_components_ordertracking",
+      "src_components_ordertracking_ordertracking",
+      "src_context_authcontext",
+      "src_context_authcontext_authcontext",
+      "src_context_authprovider",
+      "src_context_authprovider_authprovider"
+    ],
+    "6": [
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react"
+    ],
+    "7": [
+      "server_package_dependencies",
+      "server_package_dependencies_bcryptjs",
+      "server_package_dependencies_cors",
+      "server_package_dependencies_dotenv",
+      "server_package_dependencies_express",
+      "server_package_dependencies_jsonwebtoken",
+      "server_package_dependencies_mongoose",
+      "server_package_dependencies_nodemailer",
+      "server_package_dependencies_razorpay",
+      "server_package_dependencies_stripe"
+    ],
+    "8": [
+      "src_components_data_products",
+      "src_components_data_products_products",
+      "src_components_productcard",
+      "src_components_productcard_productcard",
+      "src_components_productpage",
+      "src_components_productpage_productpage",
+      "src_components_shop",
+      "src_components_shop_shop"
+    ],
+    "9": [
+      "ref_react",
+      "src_components_cartdrawer",
+      "src_components_checkoutmodal",
+      "src_components_navbar",
+      "src_context_cartcontext",
+      "src_context_cartcontext_cartcontext"
+    ],
+    "10": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview"
+    ],
+    "11": [
+      "src_components_hero",
+      "src_components_hero_extended",
+      "src_components_hero_hero",
+      "src_components_hero_products",
+      "src_components_navbar_navbar"
+    ],
+    "12": [
+      "src_components_wishlistdrawer",
+      "src_components_wishlistdrawer_wishlistdrawer",
+      "src_context_wishlistcontext",
+      "src_context_wishlistcontext_wishlistcontext",
+      "src_context_wishlistcontext_wishlistprovider"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07671957671957672,
+    "1": 0.09523809523809523,
+    "2": 0.09666666666666666,
+    "3": 0.10526315789473684,
+    "4": 0.19166666666666668,
+    "5": 0.2909090909090909,
+    "6": 0.2,
+    "7": 0.2,
+    "8": 0.35714285714285715,
+    "9": 0.7333333333333333,
+    "10": 0.4,
+    "11": 0.4,
+    "12": 0.5
+  },
+  "gods": [
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 18
+    },
+    {
+      "id": "ref_react_router_dom",
+      "label": "react-router-dom",
+      "degree": 10
+    },
+    {
+      "id": "src_context_authcontext_authcontext",
+      "label": "AuthContext",
+      "degree": 7
+    },
+    {
+      "id": "src_context_cartcontext_cartcontext",
+      "label": "CartContext",
+      "degree": 6
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "ref_mongoose",
+      "label": "mongoose",
+      "degree": 5
+    },
+    {
+      "id": "server_package_scripts",
+      "label": "scripts",
+      "degree": 4
+    },
+    {
+      "id": "server_services_emailservice_sendorderconfirmation",
+      "label": "sendOrderConfirmation()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_data_products_products",
+      "label": "products",
+      "degree": 3
+    },
+    {
+      "id": "src_context_wishlistcontext_wishlistcontext",
+      "label": "WishlistContext",
+      "degree": 3
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `Community 9` to `Community 2`, `Community 4`, `Community 5`, `Community 8`, `Community 11`, `Community 12`?",
+      "why": "High betweenness centrality (0.085) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react-router-dom` connect `Community 4` to `Community 8`, `Community 9`, `Community 2`, `Community 5`?",
+      "why": "High betweenness centrality (0.059) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `Community 6` to `Community 2`?",
+      "why": "High betweenness centrality (0.050) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `name`, `private`, `version` to the rest of the system?",
+      "why": "84 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07671957671957672 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09666666666666666 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
